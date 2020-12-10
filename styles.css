@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+::selection {
+    background: #8CAC74;
+}
+.nav{
+    z-index: 1;
+    background-color: #68a15e;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav__ul{
+    display: flex;
+    font-size: 1.5em;
+}
+.nav__li{
+    margin: 0% 3.5% 0% 3.5%;
+}
+.nav__li a{
+    color: white;
+}
+.nav__li a:hover{
+    color: #2e5039;
+}
+.push{
+    margin-right: auto;
+}
+.firstbackground{
+    height: 100vh;
+    background: url("zimage2.jpg");
+    background-size: cover;
+}
+.cover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92%;
+}
+.cover img{
+    height: 70vh;
+    filter:contrast(120%);
+}
+.c_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 47%;
+    height: 100%;
+}
+.c_content h2{
+    color: white;
+    border: 3px solid #306e44;
+    text-align: center;
+}
+.c_content a{
+    color: white;
+    align-self: center;
+    margin-top: 8%;
+    font-size: 1.8em;
+    border: solid #68A15E 5px;
+    background-color: #68A15E;
+    border-radius: 15px;
+}
+.c_content a:hover{
+    color: #1f3325;
+}
+.divh2{
+    display: flex;
+    justify-content: start;
+}
+.divh2 h3{
+    background-color: #306E44;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+.images{
+    display: flex;
+}
+.images img{
+    width: 50%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 570px){
+    .nav__ul{
+        font-size: 1em;
+    }
+    .nav__li{
+        margin-left: 0;
+    }
+    .last{
+        margin-right: 0;
+    }
+    .c_content h2{
+        font-size: 1.3em;
+    }
+    .cover img{
+        height: 40vh;
+    }
+    .c_content a{
+        font-size: 1.2em;
+    }    
+}
+@media only screen and (max-width: 400px) {
+    .nav__ul{
+        font-size: 0.7em;
+    }
+    .push{
+        margin-left: 0;
+    }
+    .cover{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .cover img{
+        display: none;
+    }
+    .c_content a{
+        font-size: 1em;
+    }    
+    .divh2 h3{
+        font-size: 0.8em;
+    }
+}
