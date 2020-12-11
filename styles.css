@@ -1,165 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: inherit;
-}
-html{
-    box-sizing: border-box;
-}
-::selection {
-    background: #8CAC74;
-}
-.nav{
-    z-index: 1;
-    background-color: #68a15e;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-}
-.nav__ul{
-    display: flex;
-    font-size: 1.5em;
-}
-.nav__li{
-    margin: 0% 3.5% 0% 3.5%;
-}
-.nav__li a{
-    color: white;
-}
-.nav__li a:hover{
-    color: #2e5039;
-}
-.push{
-    margin-right: auto;
-}
-.firstbackground{
-    height: 100vh;
-    background: url("zimage2.jpg");
-    background-size: cover;
-}
-.cover{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 92%;
-}
-.cover img{
-    margin-top: 8%;
-    max-width: 50%;
-    max-height: 80%;
-    filter:contrast(120%);
-}
-.c_content{
-    margin-top: 8%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 47%;
-    height: 100%;
-}
-.c_content h2{
-    color: white;
-    border: 3px solid #306e44;
-    text-align: center;
-}
-.c_content a{
-    color: white;
-    align-self: center;
-    margin-top: 8%;
-    font-size: 1.8em;
-    border: solid #68A15E 5px;
-    background-color: #68A15E;
-    border-radius: 15px;
-}
-.c_content a:hover{
-    color: #1f3325;
-}
-.divh2{
-    display: flex;
-    justify-content: start;
-}
-.divh2 h3{
-    background-color: #306E44;
-    padding: 1%;
-    color: white;
-    text-align: center;
-    width: 50%;
-}
-.images{
-    display: flex;
-}
-.images img{
-    padding: 2%;
-    width: 50%;
-    object-fit: cover;
-}
-.mainfooter{
-    background-color: rgb(3, 17, 6);
-    color: white;
-    text-align: center;
-    max-height: 300px;
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 1%;
-}
-.about{
-    width: 50%;
-}
-.about *{
-    margin-top: 5%;
-}
-@media only screen and (max-width: 570px){
-    .nav__ul{
-        font-size: 1em;
-    }
-    .nav__li{
-        margin-left: 0;
-    }
-    .last{
-        margin-right: 0;
-    }
-    .c_content h2{
-        font-size: 1.3em;
-    }
-    .cover img{
-        height: 40%;
-    }
-    .c_content a{
-        font-size: 1.2em;
-    }    
-}
-@media only screen and (max-width: 400px) {
-    .nav__ul{
-        font-size: 0.7em;
-    }
-    .push{
-        margin-left: 0;
-    }
-    .cover{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .cover img{
-        display: none;
-    }
-    .c_content a{
-        font-size: 1em;
-    }    
-    .divh2 h3{
-        font-size: 0.8em;
-    }
-    .nav{
-        padding: 15px;
-    }
-    .footer{
-        font-size: 11px;
-    }
-    .footer img{
-        width: 15%;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>u</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Tree-3 save trees and save our planet.">
+</head>
+<body>
+    <div class="firstbackground">
+        <header>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li push"><a href="#">Tree-3</a></li>
+                    <li class="nav__li"><a href="#figures">Figures</a></li>
+                    <li class="nav__li"><a href="#importance">Importance</a></li>
+                    <li class="nav__li last"><a href="#idfooter">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="cover">
+            <div class="c_content">
+                <h2>We are helping our planet planting thousands of trees per month, help us to acomplish this mission, help your planet</h2>
+                <a href="#">Save a tree</a>
+            </div>
+            <img src="ztree.png" alt="tree">
+        </div>
+    </div>
+    <div class="contenti" id="figures">
+        <div class="divh2">
+            <h3>We are planting 3000 thousand trees per month</h3>
+            <h3>You may increase that number, help us</h3>
+        </div>
+        <div class="images">
+            <img src="1.jpg" alt="planting"> 
+            <img class="lastimgxd" src="2.jpg" alt="shovel"> 
+        </div>
+    </div>
+    <div class="help" id="importance">
+        <h2>Why should I help?</h2>
+    </div>
+    <div class="cards">
+        <div class="card1">
+            <img src="plant.jpg" alt="little plant">
+            <h2>Importance</h2>
+            <p>Trees are a very important part of our lives, trees produce the oxygen that keeps us alive, but they not only help us, they also help tons of animals</p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="card2">
+            <img src="deforestation.jpg" alt="deforestation">
+            <h2>Deforestation</h2>
+            <p>Due to human irresponsibility we are losing our beautiful forests and jungles and many animals are on the way to extinction</p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="card3">
+            <img src="forest.jpg" alt="forest">
+            <h2>Forests</h2>
+            <p>Our forests are key to our environment, they are the home for tons of animals and we are losing it. Help us stop this massacre</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+    <div class="mainfooter" id="idfooter">
+        <footer class="footer">
+             <div class="info">
+                <ul>
+                    <li> New York</li>
+                    <li> +1 555 351246</li>
+                    <li> 3_trees@trees.com</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>About our foundation</h3>
+                <p>This foundation has been working since 2013, we have planted millions of trees</p>
+                <a href="#idfooter"><img src="faceb.png" alt="facebook logo"></a>
+                <a href="#idfooter"><img src="twitter.png" alt="twitter logo"></a>
+                <a href="#idfooter"><img src="insta.png" alt="instagram logo"></a>
+                <a href="#idfooter"><img src="youtube.png" alt="youtube logo"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
